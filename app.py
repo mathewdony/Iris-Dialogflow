@@ -47,7 +47,7 @@ def processRequest(req):
     final_features = [np.array(int_features)]
 	 
     intent = result.get("intent").get('displayName')
-        print(intent)
+    print(intent)
 
     if (intent=='IrisData'):
         prediction = model.predict(final_features)
